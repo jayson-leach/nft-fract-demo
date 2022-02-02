@@ -16,32 +16,25 @@ This project demonstrates the basic idea behind NFT fractionalization, based on 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This demo uses Hardhat tools in order to run a blockchain simulation on hardware.
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jayson-leach/nft-fract-demo.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm init -y
+   npm install --save-dev hardhat
+   npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers
+   npm install @openzeppelin/contracts
+   ```
+3. Now, you can test the pre-made demo.
+   ```sh
+   npx hardhat run scripts/run.js
+   ```
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+You can now freely make changes to run.js to change the interactions of the demo.
 
 
 
@@ -60,11 +53,5 @@ Much of the code and direction for this demo is taken directly from a project on
 
 Jayson Leach - jleach@ucsd.edu
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-Visual Studio Code -
-The main software used to develop this demo is VS Code. 
-More info on VS Code: https://code.visualstudio.com/docs
+Project Link: [https://github.com/jayson-leach/nft-fract-demo](https://github.com/jayson-leach/nft-fract-demo)
 
