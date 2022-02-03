@@ -14,7 +14,7 @@ const main = async () => {
     // Wait for it to be mined.
     await txn2.wait()
 
-    await nftContract.transfer(addr1.address);
+    // await nftContract.transfer(addr1.address);
 
   };
   
