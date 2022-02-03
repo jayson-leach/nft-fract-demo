@@ -17,7 +17,7 @@ contract FractNFT is ERC721URIStorage {
     }
 
     // Create New NFT, thus no nests or other data to grab from
-    function mintNewFractNFT(string memory set_name, string memory data) public {
+    function mintNewFractNFT(string memory set_name, string memory add, string memory data) public {
         // Get the current tokenId, this starts at 0.
         uint256 newItemId = _tokenIds.current();
 
@@ -29,7 +29,7 @@ contract FractNFT is ERC721URIStorage {
                         '{"name": "',
                         set_name,
                         '", "creator": "',
-                        msg.sender,
+                        add,
                         '", "nests": "", "data": "',
                         data,'"}'
                     )
@@ -56,7 +56,7 @@ contract FractNFT is ERC721URIStorage {
     }
 
     // Create NFT from other NFT (one or more) of the same type
-    function mintFractNFT(string memory set_name, string memory nests, string memory data) public {
+    function mintFractNFT(string memory set_name, string memory c_address, string memory nests, string memory data) public {
         // Get the current tokenId, this starts at 0.
         uint256 newItemId = _tokenIds.current();
 
@@ -68,7 +68,7 @@ contract FractNFT is ERC721URIStorage {
                         '{"name": "',
                         set_name,
                         '", "creator": "',
-                        msg.sender,
+                        c_address,
                         '", "nests": "',
                         nests,
                         '", "data": "',

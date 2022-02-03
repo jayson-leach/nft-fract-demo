@@ -8,6 +8,7 @@ This project demonstrates the basic idea behind NFT fractionalization, based on 
 ### Built With
 
 * [Hardhat](https://hardhat.org/getting-started/)
+* [OpenZeppelin] (https://docs.openzeppelin.com/contracts/4.x/)
 
 
 
